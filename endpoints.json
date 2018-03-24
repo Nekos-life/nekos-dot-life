@@ -1,0 +1,31 @@
+{
+  "nsfw": {
+    "RandomHentaiGif": "/img/Random_hentai_gif",
+    "Pussy": "/img/pussy",
+    "NekoGif": "/img/nsfw_neko_gif",
+    "Neko": "/img/lewd",
+    "Lesbian": "/img/les",
+    "Kuni": "/img/kuni",
+    "Cumsluts": "/img/cum",
+    "Classic": "/img/classic",
+    "Boobs": "/img/boobs",
+    "Bj": "/img/bj",
+    "Anal": "/img/anal"
+  },
+  "sfw": {
+    "Tickle": "/img/tickle",
+    "Slap": "/img/slap",
+    "Poke": "/img/poke",
+    "Pat": "/img/pat",
+    "Neko": "/img/neko",
+    "Meow": "/img/meow",
+    "Lizard": "/img/lizard",
+    "Kiss": "/img/kiss",
+    "Hug": "/img/hug",
+    "FoxGirl": "/img/fox_girl",
+    "Feed": "/img/feed",
+    "Cuddle": "/img/cuddle",
+    "Why": "/why",
+    "CatText": "/cat"
+  }
+}
