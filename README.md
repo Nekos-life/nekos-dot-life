@@ -55,7 +55,7 @@ const client = require('nekos.life');
 const neko = new client();
 
 async function test() {
-  console.log(await client.getSFWHug());
+  console.log(await neko.getSFWHug());
 }
 
 test();
