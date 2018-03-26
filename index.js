@@ -33,7 +33,7 @@ class NekoClient {
     Object.keys(endpoints.sfw).forEach(async (endpoint) => {
       self[`getSFW${endpoint}`] = async function () { return await getContent(baseURL + endpoints.sfw[endpoint]);};
     });
-    Object.keys(endpoints.sfw).forEach( async (endpoint) => {
+    Object.keys(endpoints.nsfw).forEach( async (endpoint) => {
       self[`getNSFW${endpoint}`] = async function () { return await getContent(baseURL + endpoints.nsfw[endpoint]);};
     });
   }
