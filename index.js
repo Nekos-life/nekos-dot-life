@@ -1,4 +1,5 @@
 const {get} = require('https');
+const {URL, URLSearchParams} = require('url');
 const endpoints = require('./endpoints.json');
 
 function getContent(url) {
@@ -31,10 +32,18 @@ class NekoClient {
     let self = this;
     let baseURL = 'https://nekos.life/api/v2';
     Object.keys(endpoints.sfw).forEach(async (endpoint) => {
-      self[`getSFW${endpoint}`] = async function () { return await getContent(baseURL + endpoints.sfw[endpoint]);};
+      self[`getSFW${endpoint}`] = async function (queryParams = '') {
+        let url = new URL(`${baseURL}${endpoints.sfw[endpoint]}`);
+        queryParams !== '' ? url.search = new URLSearchParams(queryParams) : '';
+        return await getContent(url.toString());
+        };
     });
     Object.keys(endpoints.nsfw).forEach( async (endpoint) => {
-      self[`getNSFW${endpoint}`] = async function () { return await getContent(baseURL + endpoints.nsfw[endpoint]);};
+      self[`getNSFW${endpoint}`] = async function (queryParams = '') {
+        let url = new URL(`${baseURL}${endpoints.nsfw[endpoint]}`);
+        queryParams !== '' ? url.search = new URLSearchParams(queryParams) : '';
+        return await getContent(url.toString());
+      };
     });
   }
 }

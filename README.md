@@ -30,6 +30,7 @@ The wrapper functions all return promises, so you can use traditional promises o
 | `getSFWCuddle` | Get a URL of a cuddle image/gif |
 | `getSFWWhy` | Get `text` of a question |
 | `getSFWCatText`| Get `text` of a cat emoji |
+| `getSFWOwOify` | Get OwOified `text` of a string |
 | `getNSFWRandomHentaiGif` | Get a URL of hentai gif |
 | `getNSFWPussy` | Get a NSFW URL of a pussy image/gif |
 | `getNSFWNekoGif`| Get a NSFW URL of a neko gif |
@@ -46,6 +47,10 @@ All of the endpoints but the ones marked with `text` in the description will ret
 
 getSFWCatText will return JSON: `{cat: <catemoji>}`  
 getSFWWhy will return JSON `{why: <whytext>}`  
+getSFWOwOify will return JSON `{owo: <owoified string>}` 
+
+As of now, `getSFWOwOify` is the only function that takes in querystring parameters. It requires an object containing the parameter, and the key should be the value. In this case, the key is `text` and the value is whatever you want OwOified.  There is an example in this README.
+`{text: 'Some text you want weebified.}` 
 
 ## Examples
 
@@ -75,4 +80,18 @@ neko.getSFWCatText().then((catText) => console.log(catText));
 returns
 ```js
 { cat: '((≡^⚲͜^≡))' }
+```
+
+`getSFWOwOify` example
+```js
+async function work() {
+  let owo = await neko.getSFWOwOify({text: 'This lib is really awesome!'});
+  console.log(owo);
+}
+
+work();
+```
+returns
+```js
+{ owo: 'This wib is weawwy awesome >w< ' }
 ```

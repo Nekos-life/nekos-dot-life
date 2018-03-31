@@ -1,6 +1,6 @@
 {
   "name": "nekos.life",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "JS wrapper for https://nekos.life",
   "main": "index.js",
   "scripts": {
