@@ -31,6 +31,9 @@ The wrapper functions all return promises, so you can use traditional promises o
 | `getSFWWhy` | Get `text` of a question |
 | `getSFWCatText`| Get `text` of a cat emoji |
 | `getSFWOwOify` | Get OwOified `text` of a string |
+| `getSFWChat` | Sends the text and replies with a `text` as a response |
+| `getSFW8Ball` | Sends the text and replies with a `text` as a response to the magic 8Ball and an image as well.|
+| `getSFWFact` | Gets the text and replies with a `text` that is a random fact |
 | `getNSFWRandomHentaiGif` | Get a URL of hentai gif |
 | `getNSFWPussy` | Get a NSFW URL of a pussy image/gif |
 | `getNSFWNekoGif`| Get a NSFW URL of a neko gif |
@@ -43,11 +46,15 @@ The wrapper functions all return promises, so you can use traditional promises o
 | `getNSFWBj` | Gets a NSFW URL of bj image/gif |
 | `getNSFWAnal` | Gets a NSFW URL of anal image/gif |
 
-All of the endpoints but the ones marked with `text` in the description will return JSON: `{ url: <theURL>}`.
+All of the endpoints but the ones marked with `text`, except Chat/8Ball/Fact in the description will return JSON: `{ url: <theURL>}`.
 
 getSFWCatText will return JSON: `{cat: <catemoji>}`  
 getSFWWhy will return JSON `{why: <whytext>}`  
 getSFWOwOify will return JSON `{owo: <owoified string>}` 
+
+getSFWFact will return JSON `{response: <fact string>}` 
+getSF8Ball will return JSON `{response: <8Ball response string>, url: <URL to a matching 8Ball image>}` 
+getSFWChat will return JSON `{response: <reply string>}`, this one is special and will have an example :)  
 
 As of now, `getSFWOwOify` is the only function that takes in querystring parameters. It requires an object containing the parameter, and the key should be the value. In this case, the key is `text` and the value is whatever you want OwOified.  There is an example in this README.
 `{text: 'Some text you want weebified.}` 
@@ -95,3 +102,19 @@ returns
 ```js
 { owo: 'This wib is weawwy awesome >w< ' }
 ```
+
+`getSFWChat` example  
+```js
+async function work() {
+  let owo = await neko.getSFWChat({text: "What's up?"});
+  console.log(owo);
+}
+
+work();
+```
+returns
+```js
+{ response: 'Not much.' }
+```
+Try adding `owo: "true"` after the text prop ;). It would look like this `{text: "What's up?", owo: "true"}`  
+`getSFW8Ball` is prety much the exact same thing, except you can't use `owo` with it!

@@ -27,6 +27,9 @@
     "Cuddle": "/img/cuddle",
     "Why": "/why",
     "CatText": "/cat",
-    "OwOify": "/owoify"
+    "OwOify": "/owoify",
+    "8Ball": "/8ball",
+    "Fact": "/fact",
+    "Chat": "/chat"
   }
 }
