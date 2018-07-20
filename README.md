@@ -20,7 +20,8 @@ The wrapper functions all return promises, so you can use traditional promises o
 | `getSFWSlap` | Gets a URL of a slap image/gif |
 | `getSFWPoke` | Gets a URL of a poke image/gif |
 | `getSFWPat`  | Get a URL of a pat image/gif |
-| `getSFWNeko` | Get a URL of a neko image/gif |
+| `getSFWNeko` | Get a URL of a neko image |
+| `getSFWNekoGif` | Get a URL of a neko gif |
 | `getSFWMeow` | Get a URL of a cat image/gif |
 | `getSFWLizard` | Get a URL of a lizard image/gif |
 | `getSFWKiss` | Get a URL of a kiss image/gif |
@@ -34,6 +35,8 @@ The wrapper functions all return promises, so you can use traditional promises o
 | `getSFWChat` | Sends the text and replies with a `text` as a response |
 | `getSFW8Ball` | Sends the text and replies with a `text` as a response to the magic 8Ball and an image as well.|
 | `getSFWFact` | Gets the text and replies with a `text` that is a random fact |
+| `getSFWKemonomimi` | Get a URL of a kemonomimi image/gif |
+| `getSFWHolo` | Get a URL of a Holo image/gif |
 | `getNSFWRandomHentaiGif` | Get a URL of hentai gif |
 | `getNSFWPussy` | Get a NSFW URL of a pussy image/gif |
 | `getNSFWNekoGif`| Get a NSFW URL of a neko gif |
@@ -43,8 +46,36 @@ The wrapper functions all return promises, so you can use traditional promises o
 | `getNSFWCumsluts` | Get a NSFW URL of a cumslut image/gif |
 | `getNSFWClassic` | Gets a NSFW URL of the classic endpoint image/gif |
 | `getNSFWBoobs` | Gets a NSFW URL of boobs image/gif |
-| `getNSFWBj` | Gets a NSFW URL of bj image/gif |
+| `getNSFWBJ` | Gets a NSFW URL of bj image/gif |
 | `getNSFWAnal` | Gets a NSFW URL of anal image/gif |
+| `getNSFWAnalArts` | Gets a NSFW URL of anal image/gif |
+| `getNSFWYuri` | Gets a NSFW URL of yuri image/gif |
+| `getNSFWTrap` | Gets a NSFW URL of trap image/gif |
+| `getNSFWTits` | Gets a NSFW URL of an/a image/gif containing tits |
+| `getNSFWGirlSoloGif` | Gets a NSFW URL of a solo girl gif |
+| `getNSFWGirlSolo` | Gets a NSFW URL of a solo girl image |
+| `getNSFWSmallBoobs` | Gets a NSFW URL of an/a image/gif small boobs |
+| `getNSFWPussyWankGif` | Gets a NSFW URL of a gif of pussy masterbation |
+| `getNSFWPussyArt` | Gets a NSFW URL of an/a image/gif of pussy art |
+| `getNSFWKemonomimi` | Gets a NSFW URL of an/a image/gif containing kemonomimi|
+| `getNSFWKitsune` | Gets a NSFW URL of an/a image/gif of kitsune |
+| `getNSFWKeta` | Gets a NSFW URL of an/a image/gif of keta |
+| `getNSFWHolo` | Gets a NSFW URL of an/a image/gif of Holo |
+| `getNSFWHoloEro` | Gets a NSFW URL of an/a image/gif Holo ero |
+| `getNSFWHentai` | Gets a NSFW URL of an/a image/gif of hentai |
+| `getNSFWFutanari` | Gets a NSFW URL of an/a image/gif of futa |
+| `getNSFWFemdom` | Gets a NSFW URL of an/a image/gif of femdom |
+| `getNSFWFeetGif` | Gets a NSFW URL of a gif of feet |
+| `getNSFWEroFeet` | Gets a NSFW URL of an/a image/gif of ero feet |
+| `getNSFWFeet` | Gets a NSFW URL of an image of feet |
+| `getNSFWEro` | Gets a NSFW URL of an/a image/gif ero |
+| `getNSFWEroKitsune` | Gets a NSFW URL of an/a image/gif ero kitsune |
+| `getNSFWEroKemonomimi` | Gets a NSFW URL of an/a image/gif ero kemonomimi |
+| `getNSFWEroNeko` | Gets a NSFW URL of an/a image/gif ero neko |
+| `getNSFWEroYuri` | Gets a NSFW URL of an/a image/gif ero yuri |
+| `getNSFWCumArts` | Gets a NSFW URL of an/a image/gif of cum arts |
+| `getNSFWBlowJob` | Gets a NSFW URL of an/a image/gif blowjob |
+| `getNSFWPussyGif` | Gets a NSFW URL of a gif of pussy |
 
 All of the endpoints but the ones marked with `text`, except Chat/8Ball/Fact in the description will return JSON: `{ url: <theURL>}`.
 
