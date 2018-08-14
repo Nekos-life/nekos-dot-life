@@ -12,6 +12,9 @@
 npm i -s nekos.life
 ```
 This wrapper has no external dependencies ;).  
+### Updates
+I just added a typings file and will be working to improve it. This allows editors like VSC to use intellisense/autocomplete to suggest functions and help out with parameters and to see what you'll be receiving as a result of function calls.
+
 The wrapper functions all return promises, so you can use traditional promises or await/async.
 
 | Function | Description |
@@ -48,7 +51,7 @@ The wrapper functions all return promises, so you can use traditional promises o
 | `getNSFWBoobs` | Gets a NSFW URL of boobs image/gif |
 | `getNSFWBJ` | Gets a NSFW URL of bj image/gif |
 | `getNSFWAnal` | Gets a NSFW URL of anal image/gif |
-| `getNSFWAnalArts` | Gets a NSFW URL of anal image/gif |
+| `getNSFWAvatar` | Gets a NSFW URL of an avatar image/gif |
 | `getNSFWYuri` | Gets a NSFW URL of yuri image/gif |
 | `getNSFWTrap` | Gets a NSFW URL of trap image/gif |
 | `getNSFWTits` | Gets a NSFW URL of an/a image/gif containing tits |
@@ -83,11 +86,11 @@ getSFWCatText will return JSON: `{cat: <catemoji>}`
 getSFWWhy will return JSON `{why: <whytext>}`  
 getSFWOwOify will return JSON `{owo: <owoified string>}` 
 
-getSFWFact will return JSON `{response: <fact string>}` 
-getSF8Ball will return JSON `{response: <8Ball response string>, url: <URL to a matching 8Ball image>}` 
-getSFWChat will return JSON `{response: <reply string>}`, this one is special and will have an example :)  
+getSFWFact will return JSON `{response: <fact string>}`  
+getSF8WBall will return JSON `{response: <8Ball response string>, url: <URL to a matching 8Ball image>}`  
+getSFWChat will return JSON `{response: <reply string>}`, this one is special and will have an example :)   
 
-As of now, `getSFWOwOify` is the only function that takes in querystring parameters. It requires an object containing the parameter, and the key should be the value. In this case, the key is `text` and the value is whatever you want OwOified.  There is an example in this README.
+As of now, `getSFWOwOify`, `getSFW8Ball`, and `getSFWChat` are the only ones with query parameters. It requires an object containing the parameter, and the key should be the value. In this case, the key is `text` and the value is whatever you want OwOified.  There is an example in this README.
 `{text: 'Some text you want weebified.}` 
 
 ## Examples
