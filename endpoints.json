@@ -61,6 +61,8 @@
     "Chat": "/chat",
     "NekoGif": "/img/ngif",
     "Kemonomimi": "/img/kemonomimi",
-    "Holo": "/img/holo"
+    "Holo": "/img/holo",
+    "Smug": "/img/smug",
+    "Baka": "/img/baka"
   }
 }

@@ -2,6 +2,8 @@
 declare class NekoClient {
   getSFWTickle():Promise<NekoClient.NekoRequestResults>;
   getSFWSlap():Promise<NekoClient.NekoRequestResults>;
+  getSFWSmug():Promise<NekoClient.NekoRequestResults>;
+  getSFWBaka():Promise<NekoClient.NekoRequestResults>;
   getSFWPoke():Promise<NekoClient.NekoRequestResults>;
   getSFWPat():Promise<NekoClient.NekoRequestResults>;
   getSFWNeko():Promise<NekoClient.NekoRequestResults>;

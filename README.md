@@ -19,6 +19,8 @@ The wrapper functions all return promises, so you can use traditional promises o
 
 | Function | Description |
 | -------- | ----------- |
+| `getSFWSmug` | Gets a URL of a smug image/gif |
+| `getSFWBaka` | Gets a URL of a baka image/gif |
 | `getSFWTickle` | Gets a URL of a tickle image/gif |
 | `getSFWSlap` | Gets a URL of a slap image/gif |
 | `getSFWPoke` | Gets a URL of a poke image/gif |
