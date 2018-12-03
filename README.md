@@ -42,6 +42,7 @@ The wrapper functions all return promises, so you can use traditional promises o
 | `getSFWFact` | Gets the text and replies with a `text` that is a random fact |
 | `getSFWKemonomimi` | Get a URL of a kemonomimi image/gif |
 | `getSFWHolo` | Get a URL of a Holo image/gif |
+| `getSFWWoof` | Get a URL of a dog image/gif |
 | `getNSFWRandomHentaiGif` | Get a URL of hentai gif |
 | `getNSFWPussy` | Get a NSFW URL of a pussy image/gif |
 | `getNSFWNekoGif`| Get a NSFW URL of a neko gif |

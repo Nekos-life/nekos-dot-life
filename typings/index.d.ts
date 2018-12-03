@@ -15,6 +15,7 @@ declare class NekoClient {
   getSFWFoxGirl():Promise<NekoClient.NekoRequestResults>;
   getSFWFeed():Promise<NekoClient.NekoRequestResults>;
   getSFWCuddle():Promise<NekoClient.NekoRequestResults>;
+  getSFWWoof():Promise<NekoClient.NekoRequestResults>;
   getSFWWhy():Promise<NekoClient.NekoWhyResult>;
   getSFWCatText():Promise<NekoClient.NekoCatResult>;
   getSFWOwOify(opts: NekoClient.NekoQueryParams):Promise<NekoClient.NekoOwOResult>;
