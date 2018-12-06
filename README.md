@@ -13,88 +13,99 @@ npm i -s nekos.life
 ```
 This wrapper has no external dependencies ;).  
 ### Updates
-I just added a typings file and will be working to improve it. This allows editors like VSC to use intellisense/autocomplete to suggest functions and help out with parameters and to see what you'll be receiving as a result of function calls.
 
-The wrapper functions all return promises, so you can use traditional promises or await/async.
+This next update is a ***BREAKING*** change. Please take a look at the examples. I will be splitting up `sfw` and `nsfw` so it makes it easier to import one or the other as well as both in a more concise way. The splitting examples will be at the end of the examples. If you have questions, issues or concerns, please post an issue on the GitHub!
+
+### SFW
 
 | Function | Description |
 | -------- | ----------- |
-| `getSFWSmug` | Gets a URL of a smug image/gif |
-| `getSFWBaka` | Gets a URL of a baka image/gif |
-| `getSFWTickle` | Gets a URL of a tickle image/gif |
-| `getSFWSlap` | Gets a URL of a slap image/gif |
-| `getSFWPoke` | Gets a URL of a poke image/gif |
-| `getSFWPat`  | Get a URL of a pat image/gif |
-| `getSFWNeko` | Get a URL of a neko image |
-| `getSFWNekoGif` | Get a URL of a neko gif |
-| `getSFWMeow` | Get a URL of a cat image/gif |
-| `getSFWLizard` | Get a URL of a lizard image/gif |
-| `getSFWKiss` | Get a URL of a kiss image/gif |
-| `getSFWHug`  | Get a URL of a hug image/gif |
-| `getSFWFoxGirl` | Get a URL of a fox girl image/gif |
-| `getSFWFeed` | Get a URL of a feeding image/gif |
-| `getSFWCuddle` | Get a URL of a cuddle image/gif |
-| `getSFWWhy` | Get `text` of a question |
-| `getSFWCatText`| Get `text` of a cat emoji |
-| `getSFWOwOify` | Get OwOified `text` of a string |
-| `getSFWChat` | Sends the text and replies with a `text` as a response |
-| `getSFW8Ball` | Sends the text and replies with a `text` as a response to the magic 8Ball and an image as well.|
-| `getSFWFact` | Gets the text and replies with a `text` that is a random fact |
-| `getSFWKemonomimi` | Get a URL of a kemonomimi image/gif |
-| `getSFWHolo` | Get a URL of a Holo image/gif |
-| `getSFWWoof` | Get a URL of a dog image/gif |
-| `getNSFWRandomHentaiGif` | Get a URL of hentai gif |
-| `getNSFWPussy` | Get a NSFW URL of a pussy image/gif |
-| `getNSFWNekoGif`| Get a NSFW URL of a neko gif |
-| `getNSFWNeko` | Get a NSFW URL of a neko image |
-| `getNSFWLesbian` | Get a NSFW URL of a lesbian image/gif |
-| `getNSFWKuni` | Get a NSFW URL of a kuni image/gif |
-| `getNSFWCumsluts` | Get a NSFW URL of a cumslut image/gif |
-| `getNSFWClassic` | Gets a NSFW URL of the classic endpoint image/gif |
-| `getNSFWBoobs` | Gets a NSFW URL of boobs image/gif |
-| `getNSFWBJ` | Gets a NSFW URL of bj image/gif |
-| `getNSFWAnal` | Gets a NSFW URL of anal image/gif |
-| `getNSFWAvatar` | Gets a NSFW URL of an avatar image/gif |
-| `getNSFWYuri` | Gets a NSFW URL of yuri image/gif |
-| `getNSFWTrap` | Gets a NSFW URL of trap image/gif |
-| `getNSFWTits` | Gets a NSFW URL of an/a image/gif containing tits |
-| `getNSFWGirlSoloGif` | Gets a NSFW URL of a solo girl gif |
-| `getNSFWGirlSolo` | Gets a NSFW URL of a solo girl image |
-| `getNSFWSmallBoobs` | Gets a NSFW URL of an/a image/gif small boobs |
-| `getNSFWPussyWankGif` | Gets a NSFW URL of a gif of pussy masterbation |
-| `getNSFWPussyArt` | Gets a NSFW URL of an/a image/gif of pussy art |
-| `getNSFWKemonomimi` | Gets a NSFW URL of an/a image/gif containing kemonomimi|
-| `getNSFWKitsune` | Gets a NSFW URL of an/a image/gif of kitsune |
-| `getNSFWKeta` | Gets a NSFW URL of an/a image/gif of keta |
-| `getNSFWHolo` | Gets a NSFW URL of an/a image/gif of Holo |
-| `getNSFWHoloEro` | Gets a NSFW URL of an/a image/gif Holo ero |
-| `getNSFWHentai` | Gets a NSFW URL of an/a image/gif of hentai |
-| `getNSFWFutanari` | Gets a NSFW URL of an/a image/gif of futa |
-| `getNSFWFemdom` | Gets a NSFW URL of an/a image/gif of femdom |
-| `getNSFWFeetGif` | Gets a NSFW URL of a gif of feet |
-| `getNSFWEroFeet` | Gets a NSFW URL of an/a image/gif of ero feet |
-| `getNSFWFeet` | Gets a NSFW URL of an image of feet |
-| `getNSFWEro` | Gets a NSFW URL of an/a image/gif ero |
-| `getNSFWEroKitsune` | Gets a NSFW URL of an/a image/gif ero kitsune |
-| `getNSFWEroKemonomimi` | Gets a NSFW URL of an/a image/gif ero kemonomimi |
-| `getNSFWEroNeko` | Gets a NSFW URL of an/a image/gif ero neko |
-| `getNSFWEroYuri` | Gets a NSFW URL of an/a image/gif ero yuri |
-| `getNSFWCumArts` | Gets a NSFW URL of an/a image/gif of cum arts |
-| `getNSFWBlowJob` | Gets a NSFW URL of an/a image/gif blowjob |
-| `getNSFWPussyGif` | Gets a NSFW URL of a gif of pussy |
+| `smug` | Gets a URL of a smug image/gif |
+| `baka` | Gets a URL of a baka image/gif |
+| `tickle` | Gets a URL of a tickle image/gif |
+| `slap` | Gets a URL of a slap image/gif |
+| `poke` | Gets a URL of a poke image/gif |
+| `pat`  | Get a URL of a pat image/gif |
+| `neko` | Get a URL of a neko image |
+| `nekoGif` | Get a URL of a neko gif |
+| `meow` | Get a URL of a cat image/gif |
+| `lizard` | Get a URL of a lizard image/gif |
+| `kiss` | Get a URL of a kiss image/gif |
+| `hug`  | Get a URL of a hug image/gif |
+| `foxGirl` | Get a URL of a fox girl image/gif |
+| `feed` | Get a URL of a feeding image/gif |
+| `cuddle` | Get a URL of a cuddle image/gif |
+| `why` | Get `text` of a question |
+| `catText`| Get `text` of a cat emoji |
+| `OwOify` | Get OwOified `text` of a string |
+| `chat` | Sends the text and replies with a `text` as a response |
+| `8Ball` | Sends the text and replies with a `text` as a response to the magic 8Ball and an image as well.|
+| `fact` | Gets the text and replies with a `text` that is a random fact |
+| `kemonomimi` | Get a URL of a kemonomimi image/gif |
+| `holo` | Get a URL of a Holo image/gif |
+| `woof` | Get a URL of a dog image/gif |
+
+### NSFW
+
+| Function | Description |
+| -------- | ----------- |
+| `randomHentaiGif` | Get a URL of hentai gif |
+| `pussy` | Get a NSFW URL of a pussy image/gif |
+| `nekoGif`| Get a NSFW URL of a neko gif |
+| `neko` | Get a NSFW URL of a neko image |
+| `lesbian` | Get a NSFW URL of a lesbian image/gif |
+| `kuni` | Get a NSFW URL of a kuni image/gif |
+| `cumsluts` | Get a NSFW URL of a cumslut image/gif |
+| `classic` | Gets a NSFW URL of the classic endpoint image/gif |
+| `boobs` | Gets a NSFW URL of boobs image/gif |
+| `bJ` | Gets a NSFW URL of bj image/gif |
+| `anal` | Gets a NSFW URL of anal image/gif |
+| `avatar` | Gets a NSFW URL of an avatar image/gif |
+| `yuri` | Gets a NSFW URL of yuri image/gif |
+| `trap` | Gets a NSFW URL of trap image/gif |
+| `tits` | Gets a NSFW URL of an/a image/gif containing tits |
+| `girlSoloGif` | Gets a NSFW URL of a solo girl gif |
+| `girlSolo` | Gets a NSFW URL of a solo girl image |
+| `smallBoobs` | Gets a NSFW URL of an/a image/gif small boobs |
+| `pussyWankGif` | Gets a NSFW URL of a gif of pussy masterbation |
+| `pussyArt` | Gets a NSFW URL of an/a image/gif of pussy art |
+| `kemonomimi` | Gets a NSFW URL of an/a image/gif containing kemonomimi|
+| `kitsune` | Gets a NSFW URL of an/a image/gif of kitsune |
+| `keta` | Gets a NSFW URL of an/a image/gif of keta |
+| `holo` | Gets a NSFW URL of an/a image/gif of Holo |
+| `holoEro` | Gets a NSFW URL of an/a image/gif Holo ero |
+| `hentai` | Gets a NSFW URL of an/a image/gif of hentai |
+| `futanari` | Gets a NSFW URL of an/a image/gif of futa |
+| `femdom` | Gets a NSFW URL of an/a image/gif of femdom |
+| `feetGif` | Gets a NSFW URL of a gif of feet |
+| `eroFeet` | Gets a NSFW URL of an/a image/gif of ero feet |
+| `feet` | Gets a NSFW URL of an image of feet |
+| `ero` | Gets a NSFW URL of an/a image/gif ero |
+| `eroKitsune` | Gets a NSFW URL of an/a image/gif ero kitsune |
+| `eroKemonomimi` | Gets a NSFW URL of an/a image/gif ero kemonomimi |
+| `eroNeko` | Gets a NSFW URL of an/a image/gif ero neko |
+| `eroYuri` | Gets a NSFW URL of an/a image/gif ero yuri |
+| `cumArts` | Gets a NSFW URL of an/a image/gif of cum arts |
+| `blowJob` | Gets a NSFW URL of an/a image/gif blowjob |
+| `pussyGif` | Gets a NSFW URL of a gif of pussy |
 
 All of the endpoints but the ones marked with `text`, except Chat/8Ball/Fact in the description will return JSON: `{ url: <theURL>}`.
 
-getSFWCatText will return JSON: `{cat: <catemoji>}`  
-getSFWWhy will return JSON `{why: <whytext>}`  
-getSFWOwOify will return JSON `{owo: <owoified string>}` 
+`sfw.catText` will return JSON: `{cat: <catemoji>}`  
+`sfw.why` will return JSON `{why: <whytext>}`  
+`sfw.OwOify` will return JSON `{owo: <owoified string>}` 
 
-getSFWFact will return JSON `{response: <fact string>}`  
-getSF8WBall will return JSON `{response: <8Ball response string>, url: <URL to a matching 8Ball image>}`  
-getSFWChat will return JSON `{response: <reply string>}`, this one is special and will have an example :)   
+`sfw.fact` will return JSON `{response: <fact string>}`  
+`sfw.8Ball` will return JSON `{response: <8Ball response string>, url: <URL to a matching 8Ball image>}`  
+`sfw.chat` will return JSON `{response: <reply string>}`, this one is special and will have an example :)   
 
-As of now, `getSFWOwOify`, `getSFW8Ball`, and `getSFWChat` are the only ones with query parameters. It requires an object containing the parameter, and the key should be the value. In this case, the key is `text` and the value is whatever you want OwOified.  There is an example in this README.
+As of now, `OwOify`, `8Ball`, and `Chat` are the only ones with query parameters. It requires an object containing the parameter, and the key should be the value. In this case, the key is `text` and the value is whatever you want OwOified.  There is an example in this README.
 `{text: 'Some text you want weebified.}` 
+
+## Typings
+
+I added a typings file and will be working to improve it. This allows editors like VSC to use intellisense/autocomplete to suggest functions and help out with parameters and to see what you'll be receiving as a result of function calls.
+
 
 ## Examples
 
@@ -104,7 +115,7 @@ const client = require('nekos.life');
 const neko = new client();
 
 async function test() {
-  console.log(await neko.getSFWHug());
+  console.log(await neko.sfw.hug());
 }
 
 test();
@@ -119,17 +130,20 @@ Promise example
 const client = require('nekos.life');
 const neko = new client();
 
-neko.getSFWCatText().then((catText) => console.log(catText));
+neko.sfw.catText().then((catText) => console.log(catText));
 ```
 returns
 ```js
 { cat: '((≡^⚲͜^≡))' }
 ```
 
-`getSFWOwOify` example
+`OwOify` example
 ```js
+const client = require('nekos.life');
+const neko = new client();
+
 async function work() {
-  let owo = await neko.getSFWOwOify({text: 'This lib is really awesome!'});
+  let owo = await neko.sfw.OwOify({text: 'This lib is really awesome!'});
   console.log(owo);
 }
 
@@ -140,10 +154,13 @@ returns
 { owo: 'This wib is weawwy awesome >w< ' }
 ```
 
-`getSFWChat` example  
+`Chat` example  
 ```js
+const client = require('nekos.life');
+const neko = new client();
+
 async function work() {
-  let owo = await neko.getSFWChat({text: "What's up?"});
+  let owo = await neko.sfw.chat({text: "What's up?"});
   console.log(owo);
 }
 
@@ -154,4 +171,43 @@ returns
 { response: 'Not much.' }
 ```
 Try adding `owo: "true"` after the text prop ;). It would look like this `{text: "What's up?", owo: "true"}`  
-`getSFW8Ball` is prety much the exact same thing, except you can't use `owo` with it!
+`8Ball` is prety much the exact same thing, except you can't use `owo` with it!
+
+NSFW example
+```js
+const client = require('nekos.life');
+const neko = new client();
+
+neko.nsfw.neko().then(neko => {console.log(neko);});
+```
+returns
+```js
+{ url: 'https://cdn.nekos.life/lewd/lewd_neko750.jpeg' }
+```
+
+## Advanced examples
+Here I'll show you how to import either `sfw` or `nsfw` if you would like to do so. That allows you to only use one or the other So if you only need `sfw`, you can just import that without anything `nsfw`!
+
+Importing only `sfw`
+```js
+const client = require('nekos.life');
+const {sfw} = new client();
+
+sfw.neko().then(neko => console.log(hug));
+```
+returns
+```js
+{ url: 'https://cdn.nekos.life/neko/neko_083.jpg' }
+```
+
+Importing only `nsfw`
+```js
+const client = require('nekos.life');
+const {nsfw} = new client();
+
+nsfw.neko().then(neko => console.log(neko));
+```
+returns
+```js
+{ url: 'https://cdn.nekos.life/lewd/lewd_neko_058.jpeg' }
+```
