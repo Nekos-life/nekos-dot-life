@@ -193,7 +193,7 @@ Importing only `sfw`
 const client = require('nekos.life');
 const {sfw} = new client();
 
-sfw.neko().then(neko => console.log(hug));
+sfw.neko().then(neko => console.log(neko));
 ```
 returns
 ```js
