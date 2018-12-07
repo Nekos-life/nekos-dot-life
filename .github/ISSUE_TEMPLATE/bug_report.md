@@ -1,22 +1,24 @@
-## Bug Report
-Thank you for wanting to file a bug report! To triage your report easier, we ask that you fill out the following form:
+---
+name: Bug report
+about: Create a report to help us improve
+title: bug
+labels: ''
+assignees: ''
 
+---
 
-### Describe the issue
+**Describe the bug**
+A clear and concise description of what the bug is.
 
+**To Reproduce**
+Steps to reproduce the behavior:
 
-### Steps to reproduce
+**Expected behavior**
+A clear and concise description of what you expected to happen.
 
+**Desktop (please complete the following information):**
+ - OS: [e.g. iOS]
+ - Node version [node -v]
 
-### Expected Result (aka what should;ve happened if there wasn't a bug)
-
-
-### Actual result
-
-
-### Client settings
-
-`node -v`:
-`npm -v`:
-Package version:
-Operating system:
+**Additional context**
+Add any other context about the problem here.
