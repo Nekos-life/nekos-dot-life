@@ -34,14 +34,14 @@ class NekoClient {
     self.nsfw = {};
     let baseURL = 'https://nekos.life/api/v2';
     Object.keys(endpoints.sfw).forEach(async (endpoint) => {
-      self.sfw[`${endpoint}`] = async function (queryParams = '') {
+      self.sfw[endpoint] = async function (queryParams = '') {
         let url = new URL(`${baseURL}${endpoints.sfw[endpoint]}`);
         queryParams !== '' ? url.search = new URLSearchParams(queryParams) : '';
         return await getContent(url.toString());
         };
     });
     Object.keys(endpoints.nsfw).forEach( async (endpoint) => {
-      self.nsfw[`${endpoint}`] = async function (queryParams = '') {
+      self.nsfw[endpoint] = async function (queryParams = '') {
         let url = new URL(`${baseURL}${endpoints.nsfw[endpoint]}`);
         queryParams !== '' ? url.search = new URLSearchParams(queryParams) : '';
         return await getContent(url.toString());

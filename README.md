@@ -1,5 +1,6 @@
 [![npm](https://img.shields.io/npm/v/nekos.life.svg)](https://www.npmjs.com/package/nekos.life)
 [![npm](https://img.shields.io/npm/dt/nekos.life.svg?maxAge=3600)](https://www.npmjs.com/package/nekos.life)
+[![install size](https://packagephobia.now.sh/badge?p=nekos.life)](https://packagephobia.now.sh/result?p=nekos.life)
 
  
 [![NPM](https://nodei.co/npm/nekos.life.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/nekos.life/)
@@ -11,10 +12,7 @@
 ```
 npm i -s nekos.life
 ```
-This wrapper has no external dependencies ;).  
-### Updates
-
-This next update is a ***BREAKING*** change. Please take a look at the examples. I will be splitting up `sfw` and `nsfw` so it makes it easier to import one or the other as well as both in a more concise way. The splitting examples will be at the end of the examples. If you have questions, issues or concerns, please post an issue on the GitHub!
+Official wrapper for nekos.life! Very small install size with no external dependencies.
 
 ### SFW
 
@@ -44,6 +42,7 @@ This next update is a ***BREAKING*** change. Please take a look at the examples.
 | `kemonomimi` | Get a URL of a kemonomimi image/gif |
 | `holo` | Get a URL of a Holo image/gif |
 | `woof` | Get a URL of a dog image/gif |
+| `spoiler` | Creates an individual spoiler per letter for Discord |
 
 ### NSFW
 

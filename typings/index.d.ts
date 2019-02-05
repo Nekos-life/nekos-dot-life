@@ -25,6 +25,7 @@ declare class NekoClient {
     fact():Promise<NekoClient.NekoChatResults>;
     kemonomimi():Promise<NekoClient.NekoRequestResults>;
     holo():Promise<NekoClient.NekoRequestResults>;
+    spoiler(opts: NekoClient.NekoQueryParams):Promise<NekoClient.NekoOwOResult>;
   }
   nsfw: {
     randomHentaiGif():Promise<NekoClient.NekoRequestResults>;
