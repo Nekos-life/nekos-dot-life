@@ -96,9 +96,8 @@ All of the endpoints but the ones marked with `text`, except Chat/8Ball/Fact in 
 
 `sfw.fact` will return JSON `{response: <fact string>}`  
 `sfw.8Ball` will return JSON `{response: <8Ball response string>, url: <URL to a matching 8Ball image>}`  
-`sfw.chat` will return JSON `{response: <reply string>}`, this one is special and will have an example :)   
 
-As of now, `OwOify`, `8Ball`, and `Chat` are the only ones with query parameters. It requires an object containing the parameter, and the key should be the value. In this case, the key is `text` and the value is whatever you want OwOified.  There is an example in this README.
+As of now, `OwOify` and `8Ball` are the only ones with query parameters. It requires an object containing the parameter, and the key should be the value. In this case, the key is `text` and the value is whatever you want OwOified.  There is an example in this README.
 `{text: 'Some text you want weebified.}` 
 
 ## Typings
@@ -152,25 +151,6 @@ returns
 ```js
 { owo: 'This wib is weawwy awesome >w< ' }
 ```
-
-`Chat` example  
-```js
-const client = require('nekos.life');
-const neko = new client();
-
-async function work() {
-  let owo = await neko.sfw.chat({text: "What's up?"});
-  console.log(owo);
-}
-
-work();
-```
-returns
-```js
-{ response: 'Not much.' }
-```
-Try adding `owo: "true"` after the text prop ;). It would look like this `{text: "What's up?", owo: "true"}`  
-`8Ball` is prety much the exact same thing, except you can't use `owo` with it!
 
 NSFW example
 ```js
