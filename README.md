@@ -18,75 +18,79 @@ Official wrapper for nekos.life! Very small install size with no external depend
 
 | Function | Description |
 | -------- | ----------- |
-| `smug` | Gets a URL of a smug image/gif |
-| `baka` | Gets a URL of a baka image/gif |
-| `tickle` | Gets a URL of a tickle image/gif |
-| `slap` | Gets a URL of a slap image/gif |
-| `poke` | Gets a URL of a poke image/gif |
-| `pat`  | Get a URL of a pat image/gif |
-| `neko` | Get a URL of a neko image |
-| `nekoGif` | Get a URL of a neko gif |
-| `meow` | Get a URL of a cat image/gif |
-| `lizard` | Get a URL of a lizard image/gif |
-| `kiss` | Get a URL of a kiss image/gif |
-| `hug`  | Get a URL of a hug image/gif |
-| `foxGirl` | Get a URL of a fox girl image/gif |
-| `feed` | Get a URL of a feeding image/gif |
-| `cuddle` | Get a URL of a cuddle image/gif |
-| `why` | Get `text` of a question |
-| `catText`| Get `text` of a cat emoji |
-| `OwOify` | Get OwOified `text` of a string |
-| `chat` | Sends the text and replies with a `text` as a response |
 | `8Ball` | Sends the text and replies with a `text` as a response to the magic 8Ball and an image as well.|
+| `OwOify` | Gets OwOified `text` of a string |
+| `avatar` | Gets you a URL of an avatar image/gif |
+| `baka` | Gets a URL of a baka image/gif |
+| `catText` | Gets `text` of a cat emoji |
+| `chat` | Sends the text and replies with a `text` as a response |
+| `cuddle` | Gets a URL of a cuddle image/gif |
 | `fact` | Gets the text and replies with a `text` that is a random fact |
-| `kemonomimi` | Get a URL of a kemonomimi image/gif |
-| `holo` | Get a URL of a Holo image/gif |
-| `woof` | Get a URL of a dog image/gif |
+| `feed` | Gets a URL of a feeding image/gif |
+| `foxGirl` | Gets a URL of a fox girl image/gif |
+| `gecg` | Gets a URL of a genetically engineered catgirl image/gif |
+| `goose` | Gets a URL of a goose image/gif |
+| `holo` | Gets a URL of a Holo image/gif |
+| `hug`  | Gets a URL of a hug image/gif |
+| `kemonomimi` | Gets a URL of a kemonomimi image/gif |
+| `kiss` | Gets a URL of a kiss image/gif |
+| `lizard` | Gets a URL of a lizard image/gif |
+| `meow` | Gets a URL of a cat image/gif |
+| `nekoGif` | Gets a URL of a neko gif |
+| `neko` | Gets a URL of a neko image |
+| `pat`  | Gets a URL of a pat image/gif |
+| `poke` | Gets a URL of a poke image/gif |
+| `slap` | Gets a URL of a slap image/gif |
+| `smug` | Gets a URL of a smug image/gif |
 | `spoiler` | Creates an individual spoiler per letter for Discord |
+| `tickle` | Gets a URL of a tickle image/gif |
+| `wallpaper` | Gets a URL of a wallpaper image/gif |
+| `why` | Gets `text` of a question |
+| `woof` | Gets a URL of a dog image/gif |
 
 ### NSFW
 
 | Function | Description |
 | -------- | ----------- |
-| `randomHentaiGif` | Get a URL of hentai gif |
-| `pussy` | Get a NSFW URL of a pussy image/gif |
-| `nekoGif`| Get a NSFW URL of a neko gif |
-| `neko` | Get a NSFW URL of a neko image |
-| `lesbian` | Get a NSFW URL of a lesbian image/gif |
-| `kuni` | Get a NSFW URL of a kuni image/gif |
-| `cumsluts` | Get a NSFW URL of a cumslut image/gif |
-| `classic` | Gets a NSFW URL of the classic endpoint image/gif |
-| `boobs` | Gets a NSFW URL of boobs image/gif |
-| `bJ` | Gets a NSFW URL of bj image/gif |
 | `anal` | Gets a NSFW URL of anal image/gif |
 | `avatar` | Gets a NSFW URL of an avatar image/gif |
-| `yuri` | Gets a NSFW URL of yuri image/gif |
-| `trap` | Gets a NSFW URL of trap image/gif |
-| `tits` | Gets a NSFW URL of an/a image/gif containing tits |
-| `girlSoloGif` | Gets a NSFW URL of a solo girl gif |
-| `girlSolo` | Gets a NSFW URL of a solo girl image |
-| `smallBoobs` | Gets a NSFW URL of an/a image/gif small boobs |
-| `pussyWankGif` | Gets a NSFW URL of a gif of pussy masterbation |
-| `pussyArt` | Gets a NSFW URL of an/a image/gif of pussy art |
-| `kemonomimi` | Gets a NSFW URL of an/a image/gif containing kemonomimi|
-| `kitsune` | Gets a NSFW URL of an/a image/gif of kitsune |
-| `keta` | Gets a NSFW URL of an/a image/gif of keta |
-| `holo` | Gets a NSFW URL of an/a image/gif of Holo |
-| `holoEro` | Gets a NSFW URL of an/a image/gif Holo ero |
-| `hentai` | Gets a NSFW URL of an/a image/gif of hentai |
-| `futanari` | Gets a NSFW URL of an/a image/gif of futa |
-| `femdom` | Gets a NSFW URL of an/a image/gif of femdom |
-| `feetGif` | Gets a NSFW URL of a gif of feet |
+| `bJ` | Gets a NSFW URL of bj image/gif |
+| `blowJob` | Gets a NSFW URL of an/a image/gif blowjob |
+| `boobs` | Gets a NSFW URL of boobs image/gif |
+| `classic` | Gets a NSFW URL of the classic endpoint image/gif |
+| `cumArts` | Gets a NSFW URL of an/a image/gif of cum arts |
+| `cumsluts` | Get a NSFW URL of a cumslut image/gif |
 | `eroFeet` | Gets a NSFW URL of an/a image/gif of ero feet |
-| `feet` | Gets a NSFW URL of an image of feet |
-| `ero` | Gets a NSFW URL of an/a image/gif ero |
-| `eroKitsune` | Gets a NSFW URL of an/a image/gif ero kitsune |
 | `eroKemonomimi` | Gets a NSFW URL of an/a image/gif ero kemonomimi |
+| `eroKitsune` | Gets a NSFW URL of an/a image/gif ero kitsune |
 | `eroNeko` | Gets a NSFW URL of an/a image/gif ero neko |
 | `eroYuri` | Gets a NSFW URL of an/a image/gif ero yuri |
-| `cumArts` | Gets a NSFW URL of an/a image/gif of cum arts |
-| `blowJob` | Gets a NSFW URL of an/a image/gif blowjob |
+| `ero` | Gets a NSFW URL of an/a image/gif ero |
+| `feetGif` | Gets a NSFW URL of a gif of feet |
+| `feet` | Gets a NSFW URL of an image of feet |
+| `femdom` | Gets a NSFW URL of an/a image/gif of femdom |
+| `futanari` | Gets a NSFW URL of an/a image/gif of futa |
+| `girlSoloGif` | Gets a NSFW URL of a solo girl gif |
+| `girlSolo` | Gets a NSFW URL of a solo girl image |
+| `hentai` | Gets a NSFW URL of an/a image/gif of hentai |
+| `holoEro` | Gets a NSFW URL of an/a image/gif Holo ero |
+| `holo` | Gets a NSFW URL of an/a image/gif of Holo |
+| `kemonomimi` | Gets a NSFW URL of an/a image/gif containing kemonomimi |
+| `keta` | Gets a NSFW URL of an/a image/gif of keta |
+| `kitsune` | Gets a NSFW URL of an/a image/gif of kitsune |
+| `kuni` | Gets a NSFW URL of a kuni image/gif |
+| `lesbian` | Gets a NSFW URL of a lesbian image/gif |
+| `nekoGif`| Gets a NSFW URL of a neko gif |
+| `neko` | Gets a NSFW URL of a neko image |
+| `pussyArt` | Gets a NSFW URL of an/a image/gif of pussy art |
 | `pussyGif` | Gets a NSFW URL of a gif of pussy |
+| `pussyWankGif` | Gets a NSFW URL of a gif of pussy masterbation |
+| `pussy` | Gets a NSFW URL of a pussy image/gif |
+| `randomHentaiGif` | Get a URL of hentai gif |
+| `smallBoobs` | Gets a NSFW URL of an/a image/gif small boobs |
+| `tits` | Gets a NSFW URL of an/a image/gif containing tits |
+| `trap` | Gets a NSFW URL of trap image/gif |
+| `yuri` | Gets a NSFW URL of yuri image/gif |
 
 All of the endpoints but the ones marked with `text`, except Chat/8Ball/Fact in the description will return JSON: `{ url: <theURL>}`.
 
