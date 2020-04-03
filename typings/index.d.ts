@@ -20,7 +20,6 @@ declare class NekoClient {
     why():Promise<NekoClient.NekoWhyResult>;
     catText():Promise<NekoClient.NekoCatResult>;
     OwOify(opts: NekoClient.NekoQueryParams):Promise<NekoClient.NekoOwOResult>;
-    chat(opts: NekoClient.NekoChatParams):Promise<NekoClient.NekoChatResults>;
     "8Ball"(opts: NekoClient.NekoQueryParams):Promise<NekoClient.NekoChatResults>;
     fact():Promise<NekoClient.NekoFactResult>;
     kemonomimi():Promise<NekoClient.NekoRequestResults>;
@@ -77,9 +76,6 @@ declare namespace NekoClient {
   //Help create options interface for the few functions that need it
   export interface NekoQueryParams {
     text: string;
-  }
-  export interface NekoChatParams extends NekoQueryParams {
-    owo?: boolean;
   }
   export interface NekoRequestResults {
     url: string;
