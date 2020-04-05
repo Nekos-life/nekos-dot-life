@@ -64,7 +64,6 @@ Official wrapper for nekos.life! Very small install size with no external depend
 | `tits` | Gets a NSFW URL of an/a image/gif containing tits |
 | `girlSoloGif` | Gets a NSFW URL of a solo girl gif |
 | `girlSolo` | Gets a NSFW URL of a solo girl image |
-| `smallBoobs` | Gets a NSFW URL of an/a image/gif small boobs |
 | `pussyWankGif` | Gets a NSFW URL of a gif of pussy masterbation |
 | `pussyArt` | Gets a NSFW URL of an/a image/gif of pussy art |
 | `kemonomimi` | Gets a NSFW URL of an/a image/gif containing kemonomimi|

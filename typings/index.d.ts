@@ -44,7 +44,6 @@ declare class NekoClient {
     tits():Promise<NekoClient.NekoRequestResults>;
     girlSoloGif():Promise<NekoClient.NekoRequestResults>;
     girlSolo():Promise<NekoClient.NekoRequestResults>;
-    smallBoobs():Promise<NekoClient.NekoRequestResults>;
     pussyWankGif():Promise<NekoClient.NekoRequestResults>;
     pussyArt():Promise<NekoClient.NekoRequestResults>;
     kemonomimi():Promise<NekoClient.NekoRequestResults>;
