@@ -25,6 +25,10 @@ declare class NekoClient {
     kemonomimi():Promise<NekoClient.NekoRequestResults>;
     holo():Promise<NekoClient.NekoRequestResults>;
     spoiler(opts: NekoClient.NekoQueryParams):Promise<NekoClient.NekoOwOResult>;
+    avatar():Promise<NekoClient.NekoRequestResults>;
+    gecg():Promise<NekoClient.NekoRequestResults>;
+    goose():Promise<NekoClient.NekoRequestResults>;
+    wallpaper():Promise<NekoClient.NekoRequestResults>;
   }
   nsfw: {
     randomHentaiGif():Promise<NekoClient.NekoRequestResults>;
@@ -64,7 +68,6 @@ declare class NekoClient {
     eroYuri():Promise<NekoClient.NekoRequestResults>;
     cumArts():Promise<NekoClient.NekoRequestResults>;
     blowJob():Promise<NekoClient.NekoRequestResults>;
-    pussyGif():Promise<NekoClient.NekoRequestResults>;
   }
 }
 
