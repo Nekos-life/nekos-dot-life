@@ -92,7 +92,7 @@ All of the endpoints but the ones marked with `text`, except Chat/8Ball/Fact in 
 `sfw.why` will return JSON `{why: <whytext>}`  
 `sfw.OwOify` will return JSON `{owo: <owoified string>}` 
 
-`sfw.fact` will return JSON `{response: <fact string>}`  
+`sfw.fact` will return JSON `{fact: <fact string>}`  
 `sfw.8Ball` will return JSON `{response: <8Ball response string>, url: <URL to a matching 8Ball image>}`  
 
 As of now, `OwOify` and `8Ball` are the only ones with query parameters. It requires an object containing the parameter, and the key should be the value. In this case, the key is `text` and the value is whatever you want OwOified.  There is an example in this README.
