@@ -33,14 +33,18 @@ Official wrapper for nekos.life! Very small install size with no external depend
 | `foxGirl` | Get a URL of a fox girl image/gif |
 | `feed` | Get a URL of a feeding image/gif |
 | `cuddle` | Get a URL of a cuddle image/gif |
+| `kemonomimi` | Get a URL of a kemonomimi image/gif |
+| `holo` | Get a URL of a Holo image/gif |
+| `woof` | Get a URL of a dog image/gif |
+| `wallpaper` | Get a URL of a wallpaper |
+| `goose` | Get a URL of a goose image |
+| `gecg` | Get a URL of a gecg (genetically engineered catgirl) image |
+| `avatar` | Get a URL of an avatar image |
 | `why` | Get `text` of a question |
 | `catText`| Get `text` of a cat emoji |
 | `OwOify` | Get OwOified `text` of a string |
 | `8Ball` | Sends the text and replies with a `text` as a response to the magic 8Ball and an image as well.|
 | `fact` | Gets the text and replies with a `text` that is a random fact |
-| `kemonomimi` | Get a URL of a kemonomimi image/gif |
-| `holo` | Get a URL of a Holo image/gif |
-| `woof` | Get a URL of a dog image/gif |
 | `spoiler` | Creates an individual spoiler per letter for Discord |
 
 ### NSFW
@@ -84,7 +88,6 @@ Official wrapper for nekos.life! Very small install size with no external depend
 | `eroYuri` | Gets a NSFW URL of an/a image/gif ero yuri |
 | `cumArts` | Gets a NSFW URL of an/a image/gif of cum arts |
 | `blowJob` | Gets a NSFW URL of an/a image/gif blowjob |
-| `pussyGif` | Gets a NSFW URL of a gif of pussy |
 
 All of the endpoints but the ones marked with `text`, except Chat/8Ball/Fact in the description will return JSON: `{ url: <theURL>}`.
 
