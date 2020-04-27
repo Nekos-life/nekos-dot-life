@@ -26,10 +26,10 @@ declare class NekoClient {
     holo():Promise<NekoClient.NekoRequestResults>;
     spoiler(opts: NekoClient.NekoQueryParams):Promise<NekoClient.NekoOwOResult>;
     avatar():Promise<NekoClient.NekoRequestResults>;
+    waifu():Promise<NekoClient.NekoRequestResults>;
     gecg():Promise<NekoClient.NekoRequestResults>;
     goose():Promise<NekoClient.NekoRequestResults>;
     wallpaper():Promise<NekoClient.NekoRequestResults>;
-    waifu():Promise<NekoClient.NekoRequestResults>;
   }
   nsfw: {
     randomHentaiGif():Promise<NekoClient.NekoRequestResults>;

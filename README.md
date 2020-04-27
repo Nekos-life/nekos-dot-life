@@ -40,13 +40,13 @@ Official wrapper for nekos.life! Very small install size with no external depend
 | `goose` | Get a URL of a goose image |
 | `gecg` | Get a URL of a gecg (genetically engineered catgirl) image |
 | `avatar` | Get a URL of an avatar image |
+| `waifu` | Get a URL of a waifu image |
 | `why` | Get `text` of a question |
 | `catText`| Get `text` of a cat emoji |
 | `OwOify` | Get OwOified `text` of a string |
 | `8Ball` | Sends the text and replies with a `text` as a response to the magic 8Ball and an image as well.|
 | `fact` | Gets the text and replies with a `text` that is a random fact |
 | `spoiler` | Creates an individual spoiler per letter for Discord |
-| `waifu` | Get a URL of a waifu image |
 
 ### NSFW
 
