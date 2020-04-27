@@ -46,6 +46,7 @@ Official wrapper for nekos.life! Very small install size with no external depend
 | `8Ball` | Sends the text and replies with a `text` as a response to the magic 8Ball and an image as well.|
 | `fact` | Gets the text and replies with a `text` that is a random fact |
 | `spoiler` | Creates an individual spoiler per letter for Discord |
+| `waifu` | Get a URL of a waifu image |
 
 ### NSFW
 
@@ -88,6 +89,8 @@ Official wrapper for nekos.life! Very small install size with no external depend
 | `eroYuri` | Gets a NSFW URL of an/a image/gif ero yuri |
 | `cumArts` | Gets a NSFW URL of an/a image/gif of cum arts |
 | `blowJob` | Gets a NSFW URL of an/a image/gif blowjob |
+| `spank` | Gets a NSFW URL of an/a image/gif spank |
+| `gasm` | Gets a NSFW URL of a gasm image |
 
 All of the endpoints but the ones marked with `text`, except Chat/8Ball/Fact in the description will return JSON: `{ url: <theURL>}`.
 
