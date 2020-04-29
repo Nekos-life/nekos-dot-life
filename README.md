@@ -40,6 +40,7 @@ Official wrapper for nekos.life! Very small install size with no external depend
 | `goose` | Get a URL of a goose image |
 | `gecg` | Get a URL of a gecg (genetically engineered catgirl) image |
 | `avatar` | Get a URL of an avatar image |
+| `waifu` | Get a URL of a waifu image |
 | `why` | Get `text` of a question |
 | `catText`| Get `text` of a cat emoji |
 | `OwOify` | Get OwOified `text` of a string |
@@ -88,6 +89,8 @@ Official wrapper for nekos.life! Very small install size with no external depend
 | `eroYuri` | Gets a NSFW URL of an/a image/gif ero yuri |
 | `cumArts` | Gets a NSFW URL of an/a image/gif of cum arts |
 | `blowJob` | Gets a NSFW URL of an/a image/gif blowjob |
+| `spank` | Gets a NSFW URL of an/a image/gif spank |
+| `gasm` | Gets a NSFW URL of a gasm image |
 
 All of the endpoints but the ones marked with `text`, except Chat/8Ball/Fact in the description will return JSON: `{ url: <theURL>}`.
 
