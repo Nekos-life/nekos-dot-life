@@ -27,7 +27,7 @@ Official wrapper for nekos.life! Very small install size with no external depend
 | `neko` | Get a URL of a neko image |
 | `nekoGif` | Get a URL of a neko gif |
 | `meow` | Get a URL of a cat image/gif |
-| `lizard` | Get a URL of a lizard image/gif |
+| `lizard` | Get a URL of a lizard image |
 | `kiss` | Get a URL of a kiss image/gif |
 | `hug`  | Get a URL of a hug image/gif |
 | `foxGirl` | Get a URL of a fox girl image/gif |
