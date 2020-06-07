@@ -101,6 +101,6 @@ declare namespace NekoClient {
   export interface NekoFactResult {
     fact: string; 
   }
-  export type NekoSfwEndpoints = keyof NekoClient['sfw']
-  export type NekoNsfwEndpoints = keyof NekoClient['nsfw']
+  export type NekoSfwEndpoints = keyof NekoClient['sfw'];
+  export type NekoNsfwEndpoints = keyof NekoClient['nsfw'];
 }
