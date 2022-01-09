@@ -44,7 +44,7 @@ Official wrapper for nekos.life! Very small install size with no external depend
 | `why` | Get `text` of a question |
 | `catText`| Get `text` of a cat emoji |
 | `OwOify` | Get OwOified `text` of a string |
-| `8Ball` | Sends the text and replies with a `text` as a response to the magic 8Ball and an image as well.|
+| `eightBall` | Sends the text and replies with a `text` as a response to the magic 8Ball and an image as well.|
 | `fact` | Gets the text and replies with a `text` that is a random fact |
 | `spoiler` | Creates an individual spoiler per letter for Discord |
 
@@ -99,9 +99,9 @@ All of the endpoints but the ones marked with `text`, except Chat/8Ball/Fact in 
 `sfw.OwOify` will return JSON `{owo: <owoified string>}` 
 
 `sfw.fact` will return JSON `{fact: <fact string>}`  
-`sfw.8Ball` will return JSON `{response: <8Ball response string>, url: <URL to a matching 8Ball image>}`  
+`sfw.eightBall` will return JSON `{response: <8Ball response string>, url: <URL to a matching 8Ball image>}`  
 
-As of now, `OwOify` and `8Ball` are the only ones with query parameters. It requires an object containing the parameter, and the key should be the value. In this case, the key is `text` and the value is whatever you want OwOified.  There is an example in this README.
+As of now, `OwOify` and `eightBall` are the only ones with query parameters. It requires an object containing the parameter, and the key should be the value. In this case, the key is `text` and the value is whatever you want OwOified.  There is an example in this README.
 `{text: 'Some text you want weebified.}` 
 
 ## Typings
