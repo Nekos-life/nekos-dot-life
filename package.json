@@ -1,6 +1,6 @@
 {
   "name": "nekos.life",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "JS wrapper for https://nekos.life",
   "main": "index.js",
   "typings": "./typings/index.d.ts",
@@ -13,7 +13,8 @@
   },
   "keywords": [
     "nekos",
-    "nekos.life"
+    "nekos.life",
+    "neko"
   ],
   "author": "cyberronin",
   "license": "MIT",

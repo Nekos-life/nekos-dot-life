@@ -20,7 +20,7 @@ declare class NekoClient {
     why():Promise<NekoClient.NekoWhyResult>;
     catText():Promise<NekoClient.NekoCatResult>;
     OwOify(opts: NekoClient.NekoQueryParams):Promise<NekoClient.NekoOwOResult>;
-    "8Ball"(opts: NekoClient.NekoQueryParams):Promise<NekoClient.NekoChatResults>;
+    eightBall(opts: NekoClient.NekoQueryParams):Promise<NekoClient.NekoChatResults>;
     fact():Promise<NekoClient.NekoFactResult>;
     kemonomimi():Promise<NekoClient.NekoRequestResults>;
     holo():Promise<NekoClient.NekoRequestResults>;
