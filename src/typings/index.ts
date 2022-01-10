@@ -1,9 +1,6 @@
 import { sfw, nsfw } from "../endpoints.json"
 
 //Help create options interface for the few functions that need it
-export interface NekoQueryParams {
-    text: string;
-}
 export interface NekoRequestResults {
     url: string;
 }
