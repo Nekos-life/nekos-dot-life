@@ -1,32 +1,27 @@
 import { sfw, nsfw } from "../endpoints.json"
 
-export declare class NekoClient {
-  sfw: SFWTypes;
-  nsfw: NSFWTypes
-}
-
 //Help create options interface for the few functions that need it
 export interface NekoQueryParams {
-  text: string;
+    text: string;
 }
 export interface NekoRequestResults {
-  url: string;
+    url: string;
 }
 export interface NekoChatResults {
-  response: string;
-  url?: string;
+    response: string;
+    url?: string;
 }
 export interface NekoCatResult {
-  cat: string;
+    cat: string;
 }
 export interface NekoWhyResult {
-  why: string;
+    why: string;
 }
 export interface NekoOwOResult {
-  owo: string;
+    owo: string;
 }
 export interface NekoFactResult {
-  fact: string;
+    fact: string;
 }
 
 export type SFW = keyof typeof sfw;
@@ -35,10 +30,10 @@ export type NSFW = keyof typeof nsfw;
 export type QueryTypes = "spoiler" | "OwOify" | "eightBall" | "catText" | "fact"
 
 export type SFWTypes = { [name in Exclude<SFW, QueryTypes>]: () => Promise<NekoRequestResults> }
-  & { [name in "OwOify" | "spoiler"]: (text: string) => Promise<NekoOwOResult> }
-  & { "eightBall": (text: string) => Promise<NekoChatResults> }
-  & { "why": () => Promise<NekoWhyResult> }
-  & { "catText": () => Promise<NekoCatResult> }
-  & { "fact": () => Promise<NekoFactResult> }
+    & { [name in "OwOify" | "spoiler"]: (text: string) => Promise<NekoOwOResult> }
+    & { "eightBall": (text: string) => Promise<NekoChatResults> }
+    & { "why": () => Promise<NekoWhyResult> }
+    & { "catText": () => Promise<NekoCatResult> }
+    & { "fact": () => Promise<NekoFactResult> }
 
 export type NSFWTypes = { [name in NSFW]: () => Promise<NekoRequestResults> }
