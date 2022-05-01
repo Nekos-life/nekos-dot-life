@@ -1,6 +1,5 @@
 //List all the functions
 declare class NekoClient {
-  sfw: {
     tickle():Promise<NekoClient.NekoRequestResults>;
     slap():Promise<NekoClient.NekoRequestResults>;
     smug():Promise<NekoClient.NekoRequestResults>;
@@ -30,48 +29,6 @@ declare class NekoClient {
     gecg():Promise<NekoClient.NekoRequestResults>;
     goose():Promise<NekoClient.NekoRequestResults>;
     wallpaper():Promise<NekoClient.NekoRequestResults>;
-  }
-  nsfw: {
-    randomHentaiGif():Promise<NekoClient.NekoRequestResults>;
-    pussy():Promise<NekoClient.NekoRequestResults>;
-    nekoGif():Promise<NekoClient.NekoRequestResults>;
-    neko():Promise<NekoClient.NekoRequestResults>;
-    lesbian():Promise<NekoClient.NekoRequestResults>;
-    kuni():Promise<NekoClient.NekoRequestResults>;
-    cumsluts():Promise<NekoClient.NekoRequestResults>;
-    classic():Promise<NekoClient.NekoRequestResults>;
-    boobs():Promise<NekoClient.NekoRequestResults>;
-    bJ():Promise<NekoClient.NekoRequestResults>;
-    anal():Promise<NekoClient.NekoRequestResults>;
-    avatar():Promise<NekoClient.NekoRequestResults>;
-    yuri():Promise<NekoClient.NekoRequestResults>;
-    trap():Promise<NekoClient.NekoRequestResults>;
-    tits():Promise<NekoClient.NekoRequestResults>;
-    girlSoloGif():Promise<NekoClient.NekoRequestResults>;
-    girlSolo():Promise<NekoClient.NekoRequestResults>;
-    pussyWankGif():Promise<NekoClient.NekoRequestResults>;
-    pussyArt():Promise<NekoClient.NekoRequestResults>;
-    kemonomimi():Promise<NekoClient.NekoRequestResults>;
-    kitsune():Promise<NekoClient.NekoRequestResults>;
-    keta():Promise<NekoClient.NekoRequestResults>;
-    holo():Promise<NekoClient.NekoRequestResults>;
-    holoEro():Promise<NekoClient.NekoRequestResults>;
-    hentai():Promise<NekoClient.NekoRequestResults>;
-    futanari():Promise<NekoClient.NekoRequestResults>;
-    femdom():Promise<NekoClient.NekoRequestResults>;
-    feetGif():Promise<NekoClient.NekoRequestResults>;
-    eroFeet():Promise<NekoClient.NekoRequestResults>;
-    feet():Promise<NekoClient.NekoRequestResults>;
-    ero():Promise<NekoClient.NekoRequestResults>;
-    eroKitsune():Promise<NekoClient.NekoRequestResults>;
-    eroKemonomimi():Promise<NekoClient.NekoRequestResults>;
-    eroNeko():Promise<NekoClient.NekoRequestResults>;
-    eroYuri():Promise<NekoClient.NekoRequestResults>;
-    cumArts():Promise<NekoClient.NekoRequestResults>;
-    blowJob():Promise<NekoClient.NekoRequestResults>;
-    spank():Promise<NekoClient.NekoRequestResults>;
-    gasm():Promise<NekoClient.NekoRequestResults>;
-  }
 }
 
 export = NekoClient;
